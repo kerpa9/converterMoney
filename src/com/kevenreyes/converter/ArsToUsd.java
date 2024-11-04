@@ -1,8 +1,7 @@
 package com.kevenreyes.converter;
-
 import java.util.Scanner;
-
 import com.kevenreyes.services.ConsultApi;
+
 
 public class ArsToUsd {
 
