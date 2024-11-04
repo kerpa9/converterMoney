@@ -9,10 +9,9 @@ public class ArsToUsd {
     private ConsultApi consultApi = new ConsultApi();
     String URL_BASE = "https://v6.exchangerate-api.com/v6/c9aa051fcbbe8daf18c41a0a/pair/ARS/USD/";
 
-    // json = consultApi.apiConsult(url);
 
     public void converterArsToUsd() {
-        System.out.println("----------------------ARS TO USD------------");
+        System.out.println("<----------------------ARS TO USD---------------------->");
 
         System.out.println("Please enter the value to convert from ARS to USD.");
         Double valueArs = value.nextDouble();

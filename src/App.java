@@ -6,7 +6,7 @@ import com.kevenreyes.converter.CopToUsd;
 import com.kevenreyes.converter.UsdToArs;
 import com.kevenreyes.converter.UsdToBlr;
 import com.kevenreyes.converter.UsdToCop;
-import com.kevenreyes.services.ConsultApi;
+// import com.kevenreyes.services.ConsultApi;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -18,17 +18,10 @@ public class App {
         UsdToCop usdToCop = new UsdToCop();
         Scanner optionValue = new Scanner(System.in);
 
-        // usdToArs.converterUsdToArs();
-        // arsToUsd.converterArsToUsd();
-        // blrToUsd.converterBlrToUsd();
-        // copToUsd.converterCopToUsd();
-        // usdToBlr.converterUsdToBrl();
-        // usdToCop.converterUsdToCop();
-
         String data = """
                         ********** CONVERTER MONEY  ************
 
-                    Welcome to the currency converter app. 
+                    Welcome to the currency converter app.
 
                               1./ Dollar          -> Argentine peso
                               2./ Argentine peso  -> Dollar
@@ -40,43 +33,52 @@ public class App {
 
                     Please choose a valid option.
                 """;
+        int option1 = 0;
 
-        System.out.println(data);
+        while (option1 != 7) {
 
-        int option = optionValue.nextInt();
-        // while (option != 7) {
+            System.out.println(data);
 
-        switch (option) {
-            case 1:
-                System.out.println("Hola");
+            int option = optionValue.nextInt();
 
-                break;
-            case 2:
-                System.out.println("Mundo");
+            switch (option) {
+                case 1:
 
-                break;
-            case 3:
-                System.out.println("Mundo");
+                    usdToArs.converterUsdToArs();
 
-                break;
-            case 4:
-                System.out.println("Mundo");
+                    break;
+                case 2:
 
-                break;
-            case 5:
-                System.out.println("Mundo");
+                    arsToUsd.converterArsToUsd();
 
-                break;
-            case 6:
-                System.out.println("Mundo");
+                    break;
+                case 3:
 
-                break;
-            case 7:
-                System.out.println("Thank you for using this app, goodbye");
+                    usdToBlr.converterUsdToBrl();
 
-                break;
+                    break;
+                case 4:
+
+                    blrToUsd.converterBlrToUsd();
+
+                    break;
+                case 5:
+                    usdToCop.converterUsdToCop();
+
+                    break;
+                case 6:
+
+                    copToUsd.converterCopToUsd();
+
+                    break;
+                case 7:
+                    System.out.println("Thank you for using this app, goodbye");
+
+                    break;
+            }
+
+            option1 = option;
         }
-        // }
 
     }
 }

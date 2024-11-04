@@ -10,7 +10,7 @@ public class UsdToCop {
     String URL_BASE = "https://v6.exchangerate-api.com/v6/c9aa051fcbbe8daf18c41a0a/pair/USD/COP/";
 
     public void converterUsdToCop() {
-        System.out.println("----------------------USD TO COP------------");
+        System.out.println("<----------------------USD TO COP---------------------->");
 
         System.out.println("Please enter the value to convert from USD to COP.");
         Double valueCop = value.nextDouble();
