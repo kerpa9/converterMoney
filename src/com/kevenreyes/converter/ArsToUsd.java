@@ -15,7 +15,7 @@ public class ArsToUsd {
     public void converterArsToUsd() {
         System.out.println("----------------------ARS TO USD------------");
 
-        System.out.println("Please enter the value to convert");
+        System.out.println("Please enter the value to convert from ARS to USD.");
         Double valueArs = value.nextDouble();
         String url = URL_BASE + valueArs;
         var json = consultApi.apiConsult(url);
